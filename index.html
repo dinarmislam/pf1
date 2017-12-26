@@ -14,16 +14,18 @@
     <link rel="stylesheet" href="css/style.css">
     
     <script>
-    $(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
-
-    if (scroll > 500) {
-        $(".header-area").addClass("change"); // you don't need to add a "." in before your class name
+     $(window).scroll(function() {
+    if ($(window).scrollTop() === 0) {
+        // We are at the top of the page and want to remove the class
+        $('.header-area').removeClass('change');
     } else {
-        $(".header-area").removeClass("change");
+        $('.header-area').addClass('change');
     }
 });
     </script>
+    
+ 
+    
   </head>
   <body>
     <!--top-area Start-->
