@@ -12,6 +12,18 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css">
+    
+    <script>
+    $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll > 500) {
+        $(".header-area").addClass("change"); // you don't need to add a "." in before your class name
+    } else {
+        $(".header-area").removeClass("change");
+    }
+});
+    </script>
   </head>
   <body>
     <!--top-area Start-->
