@@ -49,6 +49,16 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     position:  absolute;
     background-size:  cover;
 }
+#sticky-wrapper{
+  position: absolute;
+  z-index: 999999;
+  width: 100%;
+}
+.header-area{
+  background-color: #000;!important
+  z-index:999999;
+    
+}
 .header-text{padding: 150px 0}
 .header-text h2{
     background: url(../images/header-text-bg.png);
